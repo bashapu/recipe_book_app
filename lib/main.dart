@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 import 'details_screen.dart';
+import 'favorites_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/details': (context) => DetailsScreen(),
-        //'/favorites': (context) => FavoritesScreen(),
+        '/favorites': (context) => FavoritesScreen(),
       },
     );
   }
