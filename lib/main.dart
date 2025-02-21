@@ -8,6 +8,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  List<String> favoriteRecipes = [];
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/details': (context) => DetailsScreen(),
-        '/favorites': (context) => FavoritesScreen(),
+        '/favorites': (context) => FavoritesScreen(favoriteRecipes: favoriteRecipes),
       },
     );
   }
